@@ -12,7 +12,12 @@
 <body>
     <header id="topbar">
         <div class="logo"></div>
-        <input type="text" class="search-bar" placeholder="Pesquisar fotos">
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar...">
+            <button>
+                <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Lupa">
+            </button>
+        </div>
         <div class="icons">
             <span class="icon">⬆</span>
             <span class="icon">o</span>
@@ -22,8 +27,8 @@
 
 
     <aside id="sidebar">
-        <button>
-            <img id="account" src="images/sidebar/account.png" title="Conta">
+        <button onclick="window.location.href='settings#account.html';">
+            <img id="account" src="images/sidebar/account.jpg" title="Conta">
         </button>
 
         <div id="hr-top"></div>
@@ -46,7 +51,7 @@
 
         <div id="hr-bottom"></div>
 
-        <button id="last" onclick="window.location.href='settings.html';">
+        <button id="last" onclick="window.location.href='settings#design.html';">
             <img id="settings" src="images/sidebar/settings.png" title="Definições">
         </button>
     </aside>
@@ -54,142 +59,270 @@
 
     
     <main id="content">
+
         <div id="gallery">
 
-            <div class="photo">
-                <img src="images/galeria/g.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+            <h3 style="margin-bottom: 0.5em;"> &#8226 Segunda-Feira, 24/9</h3>
+            <div id="date1">
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/de.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/de.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/g.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/de.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/g.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/g.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/de.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/g.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/g.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/de.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
                 </div>
-            </div>
-            <div class="photo">
-                <img src="images/galeria/de.jpg" alt="Descrição da Foto">
-                <div class="metadata">
-                    <h4>Metadados da Foto</h4>
-                    <p><strong>Data:</strong> 10/10/2023</p>
-                    <p><strong>Localização:</strong> Rio de Janeiro, Brasil</p>
-                    <p><strong>Pessoas:</strong> Ana, Carlos</p>
-                    <p><strong>Tipo:</strong> Paisagem</p>
-                    <p><strong>Emoções:</strong> Serenidade, Nostalgia</p>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
                 </div>
             </div>
 
+            <h3 style="margin-bottom: 0.5em; margin-top: 1.5em;"> &#8226 Sábado, 22/9</h3>
+
+            <div id="date2">
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+                <div class="photo">
+                    <img src="images/galeria/g.jpg" alt="Descrição da Foto">
+                </div>
+
+                <div class="photo">
+                    <img src="images/galeria/de.jpg" alt="Descrição da Foto">
+                </div>
+            </div>
         </div>
+
     </main>
 
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            overflow: hidden;
+        }
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 2px solid #fff;
+            background-color: #000;
+            transition: transform 0.3s ease, transform-origin 0.3s ease;
+            image-rendering: auto;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const imageName = params.get('import');
+
+        if (imageName) {
+            const img = document.createElement('img');
+            img.src = `images/galeria/${imageName}`;
+            document.body.appendChild(img);
+
+            let scale = 1;
+            let lastTransformOrigin = '50% 50%';
+
+            img.addEventListener('wheel', function(event) {
+                event.preventDefault();
+
+                const zoomIntensity = 0.1;
+                const rect = img.getBoundingClientRect();
+
+                const mouseX = event.clientX - rect.left;
+                const mouseY = event.clientY - rect.top;
+
+                const originX = (mouseX / rect.width) * 100;
+                const originY = (mouseY / rect.height) * 100;
+
+                if (event.deltaY < 0) {
+                    lastTransformOrigin = `${originX}% ${originY}%`;
+                    img.style.transformOrigin = lastTransformOrigin;
+                    scale += zoomIntensity;
+                } else {
+                    scale -= zoomIntensity;
+                    if (scale < 1) scale = 1;
+                    img.style.transformOrigin = lastTransformOrigin;
+                }
+
+                img.style.transform = scale(`${scale}`);
+            });
+
+            document.body.addEventListener('click', function(event) {
+                if (event.target === document.body) {
+                    window.history.back();
+                }
+            });
+        } else {
+            document.body.innerHTML = '<p style="color: white;">Imagem não encontrada</p>';
+        }
+    </script>
+</body>
+</html>
